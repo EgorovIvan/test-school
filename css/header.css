@@ -1,0 +1,26 @@
+header {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto;
+  background-image: url("../img/coffee-shop.png");
+
+  height: 791px;
+
+}
+
+.header__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(254, 206, 0, 0.83);
+}
+
+
+.header__img-men {
+  position: absolute;
+  top: 104px;
+  left: 811px;
+  z-index: 5;
+}
