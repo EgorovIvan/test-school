@@ -1,12 +1,14 @@
 @font-face {
   font-family: "MuseoSansCyrl";
   src: url("../fonts/Museo/MuseoSansCyrl-300.ttf") format("ttf");
+  src: url("../fonts/Museo/MuseoSansCyrl-300.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "MuseoSansCyrl";
+  src: url("../fonts/Museo/MuseoSansCyrl-500.woff") format("woff");
   src: url("../fonts/Museo/MuseoSansCyrl-500.ttf") format("ttf");
   font-weight: 500;
   font-style: normal;
@@ -14,6 +16,7 @@
 
 @font-face {
   font-family: "MuseoSansCyrl";
+  src: url("../fonts/Museo/MuseoSansCyrl-500.woff") format("woff");
   src: url("../fonts/Museo/MuseoSansCyrl-700.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
@@ -21,6 +24,7 @@
 
 @font-face {
   font-family: "MuseoSansCyrl";
+  src: url("../fonts/Museo/MuseoSansCyrl-900.woff") format("woff");
   src: url("../fonts/Museo/MuseoSansCyrl-900.ttf") format("ttf");
   font-weight: 900;
   font-style: normal;
@@ -28,6 +32,15 @@
 
 @font-face {
   font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeue/HelveticaNeueCyr-Roman.woff") format("woff");
+  src: url("../fonts/HelveticaNeue/HelveticaNeueCyr-Roman.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeue/HelveticaNeueCyr-Medium.woff") format("woff");
   src: url("../fonts/HelveticaNeue/HelveticaNeueCyr-Medium.ttf") format("ttf");
   font-weight: 500;
   font-style: normal;
@@ -35,8 +48,17 @@
 
 @font-face {
   font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeue/HelveticaNeueCyr-Bold.woff") format("woff");
   src: url("../fonts/HelveticaNeue/HelveticaNeueCyr-Bold.ttf") format("ttf");
   font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Anton";
+  src: local("Anton"),
+    url("../fonts/Anton-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -44,9 +66,22 @@ header {
   position: relative;
   width: 1440px;
   margin: 0 auto;
-  font-family: "MuseoSansCyrl", sans-serif;
+  font-family: "MuseoSansCyrl";
   background-image: url("../img/header/coffee-shop.png");
   height: 791px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 768px;
+    height: 507px;
+  }
+}
+@media (max-width: 320px) {
+  .header {
+    width: 320px;
+    height: 620px;
+  }
 }
 
 .header__wrapper {
@@ -92,12 +127,23 @@ header {
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .header__logo-img {
+    width: 50%
+  }
+}
+
+
+
 .header__logo-text {
+  font-family: "Anton";
   font-weight: 400;
   font-size: 40px;
   line-height: 50px;
   color: #18193F;
 }
+
+
 
 .header__text {
   width: 629px;
@@ -121,7 +167,7 @@ header {
 }
 
 .header__text-info-bold {
-  font-family: "HelveticaNeue", sans-serif;
+  font-family: "HelveticaNeue";
   font-weight: 700;
   font-size: 35px;
   line-height: 41px;
@@ -155,7 +201,7 @@ header {
 
 .promotion-btn__link-title {
   margin: 0 13px 0 0;
-  font-family: "HelveticaNeue", sans-serif;
+  font-family: "HelveticaNeue";
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
@@ -165,7 +211,7 @@ header {
 
 .promotion-btn__link-text {
   margin: 4px 0 0 0;
-  font-family: "HelveticaNeue", sans-serif;
+  font-family: "HelveticaNeue";
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -223,7 +269,7 @@ header {
 }
 
 .btn-details__text {
-  font-family: "HelveticaNeue", sans-serif;
+  font-family: "HelveticaNeue";
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -231,7 +277,7 @@ header {
 }
 
 .btn-consultation__text {
-  font-family: "HelveticaNeue", sans-serif;
+  font-family: "HelveticaNeue";
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;

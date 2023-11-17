@@ -55,6 +55,18 @@ a {
   text-decoration: none;
 }
 .container {
-  width: 1105px;
+  width: 76.7%;
   margin: 0 auto;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 658px;
+  }
+}
+@media (max-width: 320px) {
+  .header {
+    width: 266px;
+  }
 }

@@ -1,5 +1,15 @@
+
 @font-face {
   font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeue/HelveticaNeueCyr-Roman.woff") format("woff");
+  src: url("../fonts/HelveticaNeue/HelveticaNeueCyr-Roman.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeue/HelveticaNeueCyr-Medium.woff") format("woff");
   src: url("../fonts/HelveticaNeue/HelveticaNeueCyr-Medium.ttf") format("ttf");
   font-weight: 500;
   font-style: normal;
@@ -7,13 +17,23 @@
 
 @font-face {
   font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeue/HelveticaNeueCyr-Bold.woff") format("woff");
   src: url("../fonts/HelveticaNeue/HelveticaNeueCyr-Bold.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeue/HelveticaNeueCyr-Black.woff") format("woff");
+  src: url("../fonts/HelveticaNeue/HelveticaNeueCyr-Black.ttf") format("ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff");
   src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
@@ -22,27 +42,23 @@
 
 @font-face {
   font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-SemiBold.woff") format("woff");
   src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf") format("ttf");
   font-weight: 600;
   font-style: normal;
 }
 
-@font-face {
-  font-family: "HelveticaNeue";
-  src: url("../fonts/HelveticaNeue/HelveticaNeueCyr-Black.ttf") format("ttf");
-  font-weight: 900;
-  font-style: normal;
-}
 
 @font-face {
   font-family: "Bebasneuecyrillic";
+  src: url("../fonts/bebasneue/bebasneueregular.woff") format("woff");
   src: url("../fonts/bebasneue/BebasNeueCyrillicRegular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 
 main {
-  font-family: "HelveticaNeue", sans-serif;
+  font-family: "HelveticaNeue";
   width: 1440px;
   margin: 0 auto;
 }
@@ -51,7 +67,7 @@ main {
   display: flex;
   justify-content: center;
   margin: 93px 0 0 0;
-  font-family: "HelveticaNeue", sans-serif;
+  font-family: "HelveticaNeue";
   font-weight: 700;
   font-size: 37px;
   line-height: 45px;
@@ -82,7 +98,7 @@ main {
   text-align: center;
   margin: 8px 0 0 0;
   padding: 6px 0;
-  font-family: "HelveticaNeue", sans-serif;
+  font-family: "HelveticaNeue";
   font-weight: 500;
   font-size: 26px;
   line-height: 28px;
@@ -91,7 +107,7 @@ main {
 
 .course__price {
   margin: 33px 0 0 0;
-  font-family: "HelveticaNeue", sans-serif;
+  font-family: "HelveticaNeue";
   font-weight: 400;
   font-size: 50px;
   line-height: 54px;
@@ -100,7 +116,7 @@ main {
 
 .course__old-price {
   margin: 7px 0 0 0;
-  font-family: "HelveticaNeue", sans-serif;
+  font-family: "HelveticaNeue";
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
@@ -118,7 +134,7 @@ main {
   left: 172px;
   width: 69px;
   height: 37px;
-  font-family: "HelveticaNeue", sans-serif;
+  font-family: "HelveticaNeue";
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -140,7 +156,7 @@ main {
 
 .course__item-info-text {
   margin: 0 0 0 15px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
@@ -154,7 +170,7 @@ main {
 
 .course__prepayment {
   margin: 30px 0 0 0;
-  font-family: "HelveticaNeue", sans-serif;
+  font-family: "HelveticaNeue";
   font-weight: 400;
   font-size: 22px;
   line-height: 24px;
@@ -191,11 +207,11 @@ main {
 }
 
 .course__btn-text {
-  width: 172px;
-  font-family: "Montserrat", sans-serif;
+  width: 174px;
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 14px;
-  line-height: 23px;
+  line-height: 24px;
   color: #FFFFFF;
   text-transform: uppercase;
 }
@@ -263,13 +279,12 @@ main {
   width: 341px;
   height: 100px;
   top: 95px;
-  left: 408px;
-  font-family: "Bebasneuecyrillic", sans-serif;
+  left: 488px;
+  font-family: "Bebasneuecyrillic";
   font-weight: 400;
   font-size: 127px;
   line-height: 100px;
   letter-spacing: -0.04em;
-  transform: scale(0.55, 0.9);
   color: #666200;
   text-shadow: 0 2.301281452178955px 1.1506407260894775px rgba(0, 0, 0, 0.5),0 -2.301281452178955px 1.1506407260894775px rgba(255, 255, 255, 0.4);
   text-transform: uppercase;
@@ -278,7 +293,7 @@ main {
 .present__text {
   top: 95px;
   left: 488px;
-  font-family: "HelveticaNeue", sans-serif;
+  font-family: "HelveticaNeue";
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
@@ -286,7 +301,7 @@ main {
 }
 
 .present__text-bold {
-  font-family: "HelveticaNeue", sans-serif;
+  font-family: "HelveticaNeue";
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
