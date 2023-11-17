@@ -1,11 +1,52 @@
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("../fonts/Museo/MuseoSansCyrl-300.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("../fonts/Museo/MuseoSansCyrl-500.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("../fonts/Museo/MuseoSansCyrl-700.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("../fonts/Museo/MuseoSansCyrl-900.ttf") format("ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeue/HelveticaNeueCyr-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeue/HelveticaNeueCyr-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
 header {
   position: relative;
   width: 1440px;
   margin: 0 auto;
-  background-image: url("../img/coffee-shop.png");
-
+  font-family: "MuseoSansCyrl", sans-serif;
+  background-image: url("../img/header/coffee-shop.png");
   height: 791px;
-
 }
 
 .header__wrapper {
@@ -17,6 +58,21 @@ header {
   background-color: rgba(254, 206, 0, 0.83);
 }
 
+.header__img-coffee1 {
+  position: absolute;
+  height: 100%;
+  top: -29px;
+  left: 529px;
+  z-index: 4;
+}
+
+.header__img-coffee2 {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
 
 .header__img-men {
   position: absolute;
@@ -24,3 +80,168 @@ header {
   left: 811px;
   z-index: 5;
 }
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 25px 0 0 0;
+}
+
+.header__logo-img {
+  width: 100%;
+}
+
+.header__logo-text {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  color: #18193F;
+}
+
+.header__text {
+  width: 629px;
+  margin: 24px 0 0 0;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -0.04em;
+  color: #232323;
+;
+}
+
+.header__text-info {
+  width: 510px;
+  margin: 24px 0 0 0;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  letter-spacing: -0.04em;
+  color: #232323;
+}
+
+.header__text-info-bold {
+  font-family: "HelveticaNeue", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  letter-spacing: -0.04em;
+  color: #232323;
+}
+
+.header__promotion {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 53px 0 0 0;
+}
+
+.header__promotion-btn {
+  width: 209px;
+  height: 60px;
+  margin: 0 22px 0 0;
+  padding: 6px 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: rgba(66, 66, 66, 0.8);
+}
+
+.promotion-btn__link {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.promotion-btn__link-title {
+  margin: 0 13px 0 0;
+  font-family: "HelveticaNeue", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.04em;
+  color: #FFFFFF;
+}
+
+.promotion-btn__link-text {
+  margin: 4px 0 0 0;
+  font-family: "HelveticaNeue", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.04em;
+  color: #FFFFFF;
+}
+
+.promotion-btn__link-text-addition {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+  color: #D2E400;
+}
+
+.header__info {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  margin: 53px 0 0 0;
+
+}
+
+.header__info-btn {
+  height: 70px;
+  margin: 0 16px 0 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.btn-details {
+  width: 285px;
+  background-color: #E10000;
+}
+
+.btn-consultation {
+  width: 279px;
+  border-radius: 10px;
+  border: 1px solid #171717;
+}
+
+.info-btn__link {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.info-btn__link-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.btn-details__text {
+  font-family: "HelveticaNeue", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.btn-consultation__text {
+  font-family: "HelveticaNeue", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  color: #171717;
+}
+
+
+
+
+
+
+
