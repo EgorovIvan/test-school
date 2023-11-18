@@ -26,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  /*overflow-x:hidden;*/
 }
 
 ol, ul {
@@ -55,18 +56,18 @@ a {
   text-decoration: none;
 }
 .container {
-  width: 76.7%;
+  max-width: 1105px;
   margin: 0 auto;
   position: relative;
 }
 
 @media (max-width: 768px) {
-  .header {
-    width: 658px;
+  .container {
+    max-width: 678px;
   }
 }
 @media (max-width: 320px) {
-  .header {
-    width: 266px;
+  .container {
+    max-width: 268px;
   }
 }

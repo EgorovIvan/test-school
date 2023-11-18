@@ -59,18 +59,47 @@
 
 main {
   font-family: "HelveticaNeue";
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  main  {
+    max-width: 768px;
+  }
+}
+@media (max-width: 320px) {
+  main {
+    max-width: 320px;
+  }
 }
 
 .main__title {
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin: 93px 0 0 0;
+  text-align: center;
+  margin: 93px auto 0 auto;
   font-family: "HelveticaNeue";
-  font-weight: 700;
+  font-weight: 500;
   font-size: 37px;
-  line-height: 45px;
+  line-height: 44px;
+}
+
+@media (max-width: 768px) {
+  .main__title  {
+    margin: 44px 0 0 0;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+@media (max-width: 320px) {
+  .main__title {
+    width: 257px;
+    margin: 42px 0 0 0;
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 .main__product-list {
@@ -79,19 +108,59 @@ main {
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 11px;
   margin: 85px 0 0 0;
+  box-sizing: border-box;
+}
+@media (max-width: 1107px) and (min-width: 769px) {
+  .main__product-list  {
+    width: 600px;
+    margin: 85px auto 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 11px;
+  }
+}
+@media (max-width: 768px) {
+  .main__product-list  {
+    margin: 53px 0 0 0;
+    grid-column-gap: 19px;
+  }
+}
+@media (max-width: 700px) and  (min-width: 321px) {
+  .main__product-list  {
+    width: 330px;
+    margin: 53px auto 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 19px;
+  }
+}
+@media (max-width: 320px) {
+  .main__product-list {
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    margin: 24px 0 0 0;
+  }
 }
 
 .main__product-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: left;
   text-align: left;
-  width: 268px;
+  max-width: 268px;
   height: 721px;
   padding: 24px;
   box-sizing: border-box;
   border: 1px solid rgba(72, 72, 72, 0.4);
   border-radius: 10px;
+}
+
+@media (max-width: 768px) and (min-width: 321px) {
+  .main__product-item  {
+    width: 155px;
+    height: 489px;
+    padding: 15px;
+    border-radius: 5px;
+  }
 }
 
 .course__title {
@@ -105,24 +174,48 @@ main {
   color: #1B002F;
 }
 
+@media (max-width: 768px) and (min-width: 321px)  {
+  .course__title  {
+    margin: 3px 0 0 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
 .course__price {
   margin: 33px 0 0 0;
-  font-family: "HelveticaNeue";
+  font-family: "HelveticaNeue", sans-serif;
   font-weight: 400;
   font-size: 50px;
   line-height: 54px;
   color: #1B002F;
 }
 
+@media (max-width: 768px) and (min-width: 321px)  {
+  .course__price  {
+    margin: 18px 0 0 0;
+    font-size: 30px;
+    line-height: 33px;
+  }
+}
+
 .course__old-price {
   margin: 7px 0 0 0;
-  font-family: "HelveticaNeue";
+  font-family: "HelveticaNeue", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: #A7ACBF;
   text-decoration-line: line-through;
   text-decoration-color: #FF2222;
+}
+
+@media (max-width: 768px) and (min-width: 321px)  {
+  .course__old-price  {
+    font-size: 18px;
+    line-height: 20px;
+  }
 }
 
 .course__discount {
@@ -143,8 +236,27 @@ main {
   border-radius: 5px;
 }
 
+@media (max-width: 768px) and (min-width: 321px)  {
+  .course__discount  {
+    top: 72px;
+    left: 97px;
+    width: 46px;
+    height: 23px;
+    font-size: 12px;
+    line-height: 24px;
+  }
+}
+
 .course__info-list {
   margin: 25px 0 0 0;
+}
+
+@media (max-width: 768px) and (min-width: 321px)  {
+  .course__info-list  {
+    margin: 13px 0 0 0;
+    font-size: 12px;
+    line-height: 24px;
+  }
 }
 
 .course__item-info {
@@ -154,6 +266,15 @@ main {
   margin: 10px 0 0 4px;
 }
 
+@media (max-width: 768px) and (min-width: 321px)  {
+  .course__item-info  {
+    margin: 10px 0 0 0;
+  }
+  .course__item-info-img {
+    width: 5px;
+  }
+}
+
 .course__item-info-text {
   margin: 0 0 0 15px;
   font-family: "Montserrat";
@@ -161,6 +282,14 @@ main {
   font-size: 12px;
   line-height: 15px;
   color: #2A2A2A;
+}
+
+@media (max-width: 768px) and (min-width: 321px)  {
+  .course__item-info-text  {
+    margin: 0 0 0 6px;
+    font-size: 8px;
+    line-height: 10px;
+  }
 }
 
 .text-bold {
@@ -177,6 +306,14 @@ main {
   color: #A7ACBF;
 }
 
+@media (max-width: 768px) and (min-width: 321px)  {
+  .course__prepayment  {
+    margin: 18px 0 0 0;
+    font-size: 12px;
+    line-height: 13px;
+  }
+}
+
 .course__prepayment-price {
   margin: 6px 0 9px 0;
   font-family: "HelveticaNeue", sans-serif;
@@ -186,6 +323,14 @@ main {
   color: #1B002F;
 }
 
+@media (max-width: 768px) and (min-width: 321px)  {
+  .course__prepayment-price  {
+    margin: 3px 0 11px 0;
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
 .course__btn {
   width: 100%;
   height: 66px;
@@ -193,6 +338,14 @@ main {
   box-sizing: border-box;
   border-radius: 10px;
   background-color: #E10000;
+}
+
+@media (max-width: 768px) and (min-width: 321px)  {
+  .course__btn  {
+    height: 40px;
+    margin: 5px 0 0 0;
+    border-radius: 5px;
+  }
 }
 
 .course__btn-link {
@@ -216,94 +369,34 @@ main {
   text-transform: uppercase;
 }
 
+@media (max-width: 768px) and (min-width: 321px)  {
+  .course__btn-text  {
+    width: 102px;
+    font-size: 8px;
+    line-height: 11px;
+  }
+}
+
 .main__present {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  text-align: left;
-  width: 100%;
-  height: 361px;
+  /*max-width: 1105px;*/
   margin: 92px 0 94px 0;
-  padding: 214px 0 0 488px;
-  box-sizing: border-box;
-  overflow: hidden;
-  border-radius: 20px;
-  background: linear-gradient(270deg, #F5C618, #FFE481);
 }
 
-.present__img-substrate {
-  position: absolute;
-  top: 0;
-  left: 0;
+@media (max-width: 768px)  {
+  .main__present  {
+    /*max-width: 678px;*/
+    margin: 37px 0;
+  }
+}
+@media (max-width: 320px) {
+  .main__present {
+    /*max-width: 266px;*/
+    margin: 35px 0;
+  }
 }
 
-.present__img-book1 {
-  position: absolute;
-  top: 110px;
-  left: 19px;
-}
-
-.present__img-plus {
-  position: absolute;
-  top: 164px;
-  left: 196px;
-}
-
-.present__img-book2 {
-  position: absolute;
-  top: 42px;
-  left: 260px;
-}
-
-.present__img-coffee1 {
-  position: absolute;
-  top: 0;
-  left: 80px;
-}
-
-.present__img-coffee2 {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.present__img-bow {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.present__title {
-  position: absolute;
-  width: 341px;
-  height: 100px;
-  top: 95px;
-  left: 488px;
-  font-family: "Bebasneuecyrillic";
-  font-weight: 400;
-  font-size: 127px;
-  line-height: 100px;
-  letter-spacing: -0.04em;
-  color: #666200;
-  text-shadow: 0 2.301281452178955px 1.1506407260894775px rgba(0, 0, 0, 0.5),0 -2.301281452178955px 1.1506407260894775px rgba(255, 255, 255, 0.4);
-  text-transform: uppercase;
-}
-
-.present__text {
-  top: 95px;
-  left: 488px;
-  font-family: "HelveticaNeue";
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  color: #2C2C2C;
-}
-
-.present__text-bold {
-  font-family: "HelveticaNeue";
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
-  color: #2C2C2C;
+.main__present-img {
+  max-width:100%;
+  height:auto;
 }
