@@ -168,7 +168,7 @@ footer {
   justify-content: center;
   text-align: center;
   width: 553px;
-  height: 38px;
+  height: 80px;
   margin: 12px 0 0 0;
   font-family: "Montserrat";
   font-weight: 400;
@@ -258,6 +258,7 @@ footer {
     font-size: 14px;
     line-height: 23px;
     border-radius: 6px;
+    cursor: pointer;
   }
 }
 @media (max-width: 320px) {
@@ -436,13 +437,12 @@ footer {
 }
 
 .footer__social-vk {
-
+  padding: 6px;
 }
 
 @media (max-width: 768px) {
   .footer__social-vk {
     width: 17px;
-    padding: 0 7px 9px 0
   }
 }
 @media (max-width: 320px) {
