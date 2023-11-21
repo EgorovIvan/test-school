@@ -9,7 +9,7 @@ if ($mysqli == false) {
     $result['status'] = false;
     $result['message'] = 'Ошибка отправки';
 } elseif ($post['FIO'] && $post['PHONE'] && $post['EMAIL']) {
-    $db = $mysqli->query('INSERT INTO applications SET name = "'.$post['FIO'].'", phone = '.(int)$post['PHONE'].', email = "'.$post['EMAIL'].'"');
+    $db = $mysqli->query('INSERT INTO applications (name, phone, email) VALUES ("'.$post['FIO'].'", '.(int)$post['PHONE'].', "'.$post['EMAIL'].'")');
 
     if ($db === false) {
         $result['status'] = false;
@@ -21,5 +21,6 @@ if ($mysqli == false) {
     $result['status'] = false;
     $result['message'] = 'Незаполнено одно из полей';
 }
+$mysqli->close();
 
 echo json_encode($result);

@@ -11,10 +11,10 @@ if ($mysqli == false) {
             $diff = $row['oldprice'] - $row['price'];
             $row['percent'] = round($diff/($row['oldprice']/100));
         }
-        $PRICES[] = $row;
+        $PRICES[$row['order']] = $row;
     }
 }
-
+$mysqli->close();
 if (is_countable($PRICES) && count($PRICES) > 0) {
     ksort($PRICES);
     foreach ($PRICES as $price) {
